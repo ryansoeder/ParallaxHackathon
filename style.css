@@ -65,10 +65,20 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: black;
-  color: purple;
   font-family: monospace;
   font-size: 2rem;
 }
+
+nav a {
+    text-decoration: none;
+    color: purple;
+    pointer-events: auto;
+}
+
+nav a:hover {
+    color: tomato;
+}
+
 
 nav div {
   line-height: 4rem;
@@ -80,3 +90,5 @@ nav div {
 .parallax {
   display: block;
 }
+
+
