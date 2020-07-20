@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: rgb(63, 63, 63);
+  background: black;
 }
 
 #container {
@@ -22,7 +22,9 @@ body {
   grid:
     "a" 500px
     "b" auto
+    "c" auto
     / 1fr;
+  grid-gap: 2rem;
 }
 
 /* ************* */
@@ -33,6 +35,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(63, 63, 63);
+  width: 100%;
+  margin: 0;
 }
 
 #me {
@@ -92,3 +97,71 @@ nav div {
 }
 
 
+/* **************** */
+/* STRENGTHS STYLES */
+/* **************** */
+
+#strengths {
+    grid-section: c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+}
+
+.img {
+    width: 500px;
+}
+
+#js {
+    width: 150px;
+}
+
+.imgtop {
+    z-index: 5;
+    position: relative;
+}
+
+.imgunder {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ***************** */
+/* WEAKNESSES STYLES */
+/* ***************** */
+
+#weaknesses {
+    grid-section: d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+
+    color: tomato;
+    font-size: 2rem;
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+}
+
+/* **************** */
+/* PORTFOLIO STYLES */
+/* **************** */
+
+#portfolio {
+    grid-section: e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+    width: 100%;
+    background-color: rgb(63, 63, 63);
+
+}
+
+#octo {
+    width: 300px;
+}
