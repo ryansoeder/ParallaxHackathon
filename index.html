@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>TEST</h1>
-</body>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <img src="me.jpg" id="me" />
+        <h1>Ryan Soeder</h1>
+        <h2>Web Developer</h2>
+      </header>
+      <nav>
+        <div id="scene-good1">
+          <div data-depth="0.5" class="parallax">Strengths</div>
+        </div>
+        <div id="scene-bad">
+          <div data-depth="0.5" class="parallax">Weaknesses</div>
+        </div>
+        <div id="scene-good2">
+          <div data-depth="0.5" class="parallax">Portfolio</div>
+        </div>
+      </nav>
+    </div>
+
+    <script src="compiled/parallax.js"></script>
+    <script>
+      var sceneGood1 = document.getElementById("scene-good1");
+      var parallaxInstance = new Parallax(sceneGood1, {
+        relativeInput: true,
+        hoverOnly: true,
+      });
+      parallaxInstance.invert(false, false);
+      parallaxInstance.scalar(50, 50);
+
+      var sceneBad = document.getElementById("scene-bad");
+      var parallaxInstance2 = new Parallax(sceneBad, {
+        relativeInput: true,
+        hoverOnly: true,
+      });
+      parallaxInstance2.scalar(200, 200);
+
+      var sceneGood2 = document.getElementById("scene-good2");
+      var parallaxInstance3 = new Parallax(sceneGood2, {
+        relativeInput: true,
+        hoverOnly: true,
+      });
+      parallaxInstance3.invert(false, false);
+      parallaxInstance3.scalar(50, 50);
+    </script>
+  </body>
 </html>
