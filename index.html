@@ -9,7 +9,6 @@
   </head>
   <body>
     <div id="container">
-
       <header>
         <img src="me.jpg" id="me" />
         <h1>Ryan Soeder</h1>
@@ -19,44 +18,45 @@
       <nav>
         <div id="scene-good1">
           <div data-depth="0.5" class="parallax">
-              <a href="#strengths">Strengths</a>
-            </div>
+            <a href="#strengths">Strengths</a>
+          </div>
         </div>
         <div id="scene-bad">
           <div data-depth="0.5" class="parallax">
-              <a href="#weaknesses">Weaknesses</a>
-            </div>
+            <a href="#weaknesses">Weaknesses</a>
+          </div>
         </div>
         <div id="scene-good2">
           <div data-depth="0.5" class="parallax">
-              <a href="#portfolio">Portfolio</a>
-            </div>
+            <a href="#portfolio">Portfolio</a>
+          </div>
         </div>
       </nav>
 
       <section id="strengths">
         <div id="scenelogo">
-            <div data-depth="1.0">
-                <img src="logos.png" class="img imgtop">
-            </div>
-            <div data-depth="0.9">
-                <img src="logos.png" class="img imgunder">
-            </div>
-            <div data-depth="0.8">
-                <img src="logos.png" class="img imgunder">
-            </div>
+          <div data-depth="1.0">
+            <img src="logos.png" class="img imgtop" />
           </div>
-
+          <div data-depth="0.9">
+            <img src="logos.png" class="img imgunder" />
+          </div>
+          <div data-depth="0.8">
+            <img src="logos.png" class="img imgunder" />
+          </div>
+        </div>
       </section>
       <section id="weaknesses">
-          <ol>
-              <li>I care too much</li>
-              <li>Am too punctual</li>
-              <li>Am a perfectionist</li>
-          </ol>
+        <ol>
+          <li>I care too much</li>
+          <li>Am too punctual</li>
+          <li>Am a perfectionist</li>
+        </ol>
       </section>
       <section id="portfolio">
-          <a href="https://github.com/ryansoeder?tab=repositories"><img src="Octocat.png" id="octo"></a>
+        <a href="https://github.com/ryansoeder?tab=repositories"
+          ><img src="Octocat.png" id="octo"
+        /></a>
       </section>
     </div>
 
@@ -85,9 +85,8 @@
       parallaxInstance3.invert(false, false);
       parallaxInstance3.scalar(50, 50);
 
-      var scenelogo = document.getElementById('scenelogo');
-      var parallaxInstance4 = new Parallax(scenelogo); 
-
+      var scenelogo = document.getElementById("scenelogo");
+      var parallaxInstance4 = new Parallax(scenelogo);
     </script>
   </body>
 </html>
